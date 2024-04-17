@@ -5,7 +5,7 @@ export default function ProjectCard() {
   return (
     <div>
       <div className="flex items-center justify-between mb-1">
-        <Link href="/works/test" className="flex items-center">
+        <Link href="/work/test" className="flex items-center">
           <Hash className="w-4 h-4 mr-1 hover:text-purple-600 ease-in-out duration-200" />
           <h3 className="font-bold text-2xl hover:translate-x-2 ease-in-out duration-300">
             Project test lorem ipsum blabla

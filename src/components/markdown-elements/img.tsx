@@ -7,8 +7,8 @@ export default function img({
   return (
     <span className="flex flex-col items-center justify-between">
       <img
-        alt={alt}
-        src={src}
+        alt={alt ?? ""}
+        src={src ?? ""}
         className="shadow-md rounded-md"
         loading="lazy"
       />

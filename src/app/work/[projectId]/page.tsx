@@ -1,4 +1,4 @@
-import { getMdPage, getMdPageKeys } from "@/app/lib/map-work-to-md";
+import { getMdPage, getMdPageKeys } from "@/lib/map-work-to-md";
 import { notFound } from "next/navigation";
 
 interface IProjectPage {

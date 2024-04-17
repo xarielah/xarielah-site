@@ -1,10 +1,10 @@
 import HeaderLogo from "@/components/navigation/header-logo";
-import NavigationBar from "@/components/navigation/navigation-bar";
+import Menu from "@/components/navigation/menu";
 import ContactPlug from "@/components/sections/contact-plug";
 import Footer from "@/components/sections/footer";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,11 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className + " md:p-0 p-3"}>
-        <header className="max-w-3xl mx-auto space-y-8 my-8">
+        <header className="max-w-3xl mx-auto">
           <HeaderLogo />
-          <NavigationBar />
+          <Menu />
         </header>
-        <main className="max-w-3xl mx-auto">
+        <main className="max-w-3xl mx-auto border-t-[1px] border-t-gray-200 mt-2 pt-8">
           {children}
           <ContactPlug />
         </main>

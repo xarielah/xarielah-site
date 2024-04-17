@@ -13,10 +13,15 @@ type MenuLink = Readonly<{
 
 export default function Menu() {
   return (
-    <menu className="flex items-center gap-6">
+    <menu className="flex items-center gap-6 justify-center">
       {menuLinks.map((link) => (
-        <li key={link.href}>
-          <Link href={link.href}>{link.title}</Link>
+        <li
+          key={link.href}
+          className="hover:scale-[1.1] ease-in-out duration-200 "
+        >
+          <Link href={link.href} className="text-gray-700 text-sm">
+            {link.title}
+          </Link>
         </li>
       ))}
     </menu>

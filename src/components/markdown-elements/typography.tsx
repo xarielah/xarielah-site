@@ -1,4 +1,5 @@
 import { AnchorHTMLAttributes, DetailedHTMLProps, HTMLAttributes } from "react";
+import Chain from "../elements/chain";
 
 export function p({
   children,
@@ -22,9 +23,10 @@ export function a({
     <a
       href={href}
       target="_blank"
-      className="font-light text-blue-600 underline hover:text-purple-800 ease-in-out duration-200"
+      className="font-light inline-flex text-purple-600 underline hover:text-purple-800 ease-in-out duration-200 items-center"
     >
       {children}
+      <Chain className="w-3 h-3 text-purple-800" />
     </a>
   );
 }

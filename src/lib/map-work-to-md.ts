@@ -7,12 +7,12 @@ type MDMapType = {
 
 export type MDComponent = (props: MDXProps) => JSX.Element;
 
-const mapWorkToMd: MDMapType = {
+export const mapWorkToMd = {
   test: Test,
 };
 
 export function getMdPage(work: string): MDComponent | undefined {
-  return mapWorkToMd[work];
+  return (mapWorkToMd as any)[work];
 }
 
 export function getMdPageKeys(): string[] {

@@ -1,13 +1,19 @@
-import Link from "next/link";
-import Hash from "../elements/hash";
+import Avatar from "@/assets/avatar.webp";
+import Image from "next/image";
+import SocialLinks from "./social-links";
 
 export default function HeaderLogo() {
   return (
-    <Link href="/">
-      <h1 className="text-4xl font-medium flex items-center">
-        <Hash className="w-8 h-8 text-purple-500" />
-        xarielah
-      </h1>
-    </Link>
+    <div className="flex items-center justify-center flex-col py-24 gap-3">
+      <Image
+        src={Avatar.src}
+        width={Avatar.width}
+        height={Avatar.height}
+        alt="avatar"
+        className="w-28 h-28 border-4"
+      />
+      <h1 className="font-bold text-4xl">Ariel Aharon</h1>
+      <SocialLinks />
+    </div>
   );
 }
