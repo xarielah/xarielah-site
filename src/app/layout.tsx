@@ -1,3 +1,7 @@
+import HeaderLogo from "@/components/navigation/header-logo";
+import NavigationBar from "@/components/navigation/navigation-bar";
+import ContactPlug from "@/components/sections/contact-plug";
+import Footer from "@/components/sections/footer";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -16,7 +20,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className + " md:p-0 p-3"}>
+        <header className="max-w-3xl mx-auto space-y-8 my-8">
+          <HeaderLogo />
+          <NavigationBar />
+        </header>
+        <main className="max-w-3xl mx-auto">
+          {children}
+          <ContactPlug />
+        </main>
+        <footer className="max-w-3xl mx-auto">
+          <Footer />
+        </footer>
+      </body>
     </html>
   );
 }
