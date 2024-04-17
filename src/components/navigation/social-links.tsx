@@ -4,10 +4,10 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 export default function SocialLinks() {
   return (
     <section className="flex space-x-4">
-      <SocialIcon href="">
+      <SocialIcon href="https://www.linkedin.com/in/ariel-aharon-580899202/">
         <FaLinkedinIn />
       </SocialIcon>
-      <SocialIcon href="">
+      <SocialIcon href="https://github.com/xarielah">
         <FaGithub />
       </SocialIcon>
     </section>
