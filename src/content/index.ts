@@ -1,24 +1,10 @@
-type MDXMetadata = {
-  title: string;
-  description: string;
-  icons: string[];
-  cover: string;
-};
-// type MDXPosts = keyof typeof mapWorkToMd;
+// Test
+import Test from "@/content/test.md";
 
-type MDXMetaObject = {
-  [key: string]: MDXMetadata;
-};
+// About
+import About from "@/content/information/about.md";
 
-export const mdxMeta: MDXMetaObject = {
-  test: {
-    title: "Test",
-    description: "Test",
-    icons: ["test"],
-    cover: "test",
-  },
-};
+// Contact
+import Contact from "@/content/information/contact.md";
 
-export function getMdPageMetadata(work: string): MDXMetadata | undefined {
-  return mdxMeta[work];
-}
+export { About, Contact, Test };

@@ -4,7 +4,7 @@ import SocialLinks from "./social-links";
 
 export default function HeaderLogo() {
   return (
-    <div className="flex items-center justify-center flex-col py-24 gap-3">
+    <div className="flex items-center justify-center flex-col py-10 gap-2">
       <Image
         src={Avatar.src}
         width={Avatar.width}

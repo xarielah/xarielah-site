@@ -12,13 +12,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className + " md:p-0 p-3"}>
+      <body className={inter.className}>
         <WorkGoHome />
-        <main className="max-w-3xl mx-auto">
-          {children}
-          {/* <ContactPlug /> */}
-        </main>
-        <footer className="max-w-3xl mx-auto">
+        <main className="max-w-xl mx-auto">{children}</main>
+        <footer className="max-w-xl mx-auto">
           <Footer />
         </footer>
       </body>

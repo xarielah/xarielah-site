@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const menuLinks: MenuLink[] = [
   { title: "Works", href: "/works" },
-  { title: "About", href: "/#about" },
-  { title: "Contact", href: "/#contact" },
+  { title: "About", href: "/about" },
+  { title: "Contact", href: "/contact" },
 ];
 
 type MenuLink = Readonly<{
@@ -13,7 +13,7 @@ type MenuLink = Readonly<{
 
 export default function Menu() {
   return (
-    <menu className="flex items-center gap-6 justify-center">
+    <menu className="flex items-center gap-6 justify-center pb-1">
       {menuLinks.map((link) => (
         <li
           key={link.href}
