@@ -1,4 +1,4 @@
-![Chrome Watching a Burning Cookie](https://media.licdn.com/dms/image/v2/D4D22AQHcGR-BqRfd7Q/feedshare-shrink_1280/feedshare-shrink_1280/0/1728326223704?e=1730937600&v=beta&t=uCOehqDlKw_zNw6oEdyEULpwgmwLGKETI3s_GZH-KO8)
+![Chrome Watching a Burning Cookie](https://i.ibb.co/nmr9zmf/Designer.jpg)
 
 #### Google is making significant changes to third-party cookies: If you use such cookies in your services, it’s worth a minute of your time to read.
 
