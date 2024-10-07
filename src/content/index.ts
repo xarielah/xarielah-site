@@ -1,5 +1,5 @@
-// Test
-import Test from "@/content/test.md";
+// Pages
+import GoogleCookiesPrivacy from "@/content/google-privacy-sandbox.md";
 
 // About
 import About from "@/content/information/about.md";
@@ -7,4 +7,4 @@ import About from "@/content/information/about.md";
 // Contact
 import Contact from "@/content/information/contact.md";
 
-export { About, Contact, Test };
+export { About, Contact, GoogleCookiesPrivacy };
